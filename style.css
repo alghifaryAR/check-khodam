@@ -101,3 +101,27 @@ button:hover {
 #result .not-found1 {
   color: #13ed08; /* Warna merah untuk pesan tidak memiliki khodam */
 }
+#result {
+  margin-top: 25px;
+  font-size: 20px;
+  text-shadow: 0 0 10px #212421;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#khodamImage {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#result.show,
+#khodamImage.show {
+  opacity: 1;
+}
