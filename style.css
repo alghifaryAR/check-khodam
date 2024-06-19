@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+body {
+  font-family: "Orbitron", sans-serif;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  width: 350px;
+  text-align: center;
+  border: 1px solid #00ffff;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #00ffff;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #00ffff;
+  border-radius: 5px;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #00ffff;
+  color: #0d0d0d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00cccc;
+}
+
+#result {
+  margin-top: 25px;
+  font-size: 20px;
+  text-shadow: 0 0 10px #00ff00;
+}
+
+#khodamImage {
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#result span {
+  font-weight: bold;
+}
+
+#result .khodam-name {
+  color: #ffcc00; /* Warna kuning untuk nama khodam */
+}
+#result {
+  margin-top: 25px;
+  font-size: 20px;
+  text-shadow: 0 0 10px #474d47;
+}
+
+#result .not-found {
+  color: #ed3208; /* Warna merah untuk pesan tidak memiliki khodam */
+}
+#result .not-found1 {
+  color: #13ed08; /* Warna merah untuk pesan tidak memiliki khodam */
+}
