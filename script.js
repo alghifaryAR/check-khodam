@@ -8,6 +8,7 @@ document
     const result = checkKhodam(name);
 
     document.getElementById("result").innerHTML = result.message;
+    document.getElementById("result").classList.add("show");
 
     const khodamImage = document.getElementById("khodamImage");
     if (result.image) {
@@ -16,6 +17,7 @@ document
     } else {
       khodamImage.style.display = "none";
     }
+    khodamImage.classList.add("show");
   });
 
 function checkKhodam(name) {
@@ -39,12 +41,12 @@ function checkKhodam(name) {
 
   if (khodam) {
     return {
-      message: `Selamat, ${name}! Anda memiliki khodam jenis <span class="not-found1">${khodamType.name}.`,
+      message: `Selamat, ${name}! Anda memiliki khodam jenis ${khodamType.name}.`,
       image: khodamType.image,
     };
   } else {
     return {
-      message: `Maaf, ${name}. <span class="not-found">Anda tidak memiliki khodam.</span>`,
+      message: `<span class="not-found">Maaf, ${name}. Anda tidak memiliki khodam.</span>`,
       image: null,
     };
   }
