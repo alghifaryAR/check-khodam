@@ -41,12 +41,12 @@ function checkKhodam(name) {
 
   if (khodam) {
     return {
-      message: `Selamat, ${name}! Anda memiliki khodam jenis ${khodamType.name}.`,
+      message: `Selamat, ${name}! Anda memiliki khodam jenis <span class="not-found">${khodamType.name}.`,
       image: khodamType.image,
     };
   } else {
     return {
-      message: `<span class="not-found">Maaf, ${name}. Anda tidak memiliki khodam.</span>`,
+      message: `Maaf, ${name}.<span class="not-found">Anda tidak memiliki khodam.</span>`,
       image: null,
     };
   }
